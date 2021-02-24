@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101418;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  /* position: absolute; */
+}
+
+#logo {
+  color: white;
+  font-family: "Abril Fatface", sans-serif;
+}
+
+.nav-header {
+  height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  z-index: 2;
+  position: relative;
+}
+
+.line1,
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  pointer-events: none;
+}
+
+.slide {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: #101418;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-basis: 25rem;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.hero-img {
+  position: relative;
+  flex: 1;
+  flex-basis: 25rem;
+  overflow: hidden;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-span {
+  color: rgb(65, 176, 202);
+}
+.second-span {
+  color: rgb(234, 72, 83);
+}
+.third-span {
+  color: rgb(255, 139, 93);
+}
+
+.hero-description h2 {
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 4rem;
+}
+
+.hero-description p {
+  padding: 3rem 0;
+  font-size: 1.5rem;
+  color: rgb(225, 225, 225);
+}
+
+.explore {
+  padding: 1rem 2rem;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+.burger {
+  cursor: pointer;
+}
+
+.nav-links {
+  font-size: 3rem;
+  flex-basis: 30rem;
+}
+
+.nav-links h3 {
+  padding: 3rem 0rem;
+}
+
+.contact {
+  flex-basis: 30rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #101418;
+  left: 0;
+  top: 0;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: background, transform;
+  transform-origin: 75% 75%;
+}
+
+.cursor.nav-active {
+  background: rgb(87, 87, 255);
+  transform: scale(3);
+}
+
+.cursor.explore-active {
+  background: white;
+  transform: scale(3);
+}
+
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 0.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  position: relative;
+  overflow: hidden;
+}
+
+.title-swipe {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  mix-blend-mode: darken;
+  transform: translateY(100%);
+}
+
+.t-swipe1 {
+  background: rgb(65, 176, 202);
+}
+
+.t-swipe2 {
+  background: rgb(234, 72, 83);
+}
+
+.t-swipe3 {
+  background: rgb(255, 139, 93);
+}
+
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+
+body.prevent-scroll {
+  overflow: hidden;
+}
+
+.plan1,
+.plan2,
+.plan3 {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 5rem auto;
+  color: white;
+  flex-wrap: wrap;
+  position: relative;
+}
+.plan-img {
+  /* min-height: 100%; */
+  flex-basis: 30rem;
+  flex: 2;
+  position: relative;
+}
+
+.plan-text {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  justify-content: center;
+  position: relative;
+  flex-basis: 20rem;
+}
+
+.plan-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.plan-text h1 {
+  font-size: 4rem;
+  padding: 1rem 1rem 0 0;
+}
+
+.plan1 h1 {
+  color: rgb(255, 139, 93);
+}
+
+.plan2 h1 {
+  color: rgb(65, 176, 202);
+}
+
+.plan3 h1 {
+  color: rgb(208, 192, 74);
+}
+
+.plan-text p {
+  font-size: 1.7rem;
+  padding: 2rem 2rem 0 0;
+}
+
+.plan-num span {
+  font-size: 13rem;
+  color: rgb(44, 46, 56);
+}
+
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.swipe1 {
+  background: rgb(208, 192, 74);
+  z-index: 5;
+}
+
+.swipe2 {
+  background: rgb(65, 176, 202);
+  z-index: 4;
+}
+
+.swipe3 {
+  background: rgb(255, 139, 93);
+  z-index: 3;
+}
